@@ -1,0 +1,7 @@
+.errorPage {
+  display: grid;
+  height: 50vh; /* Full height of the viewport */
+  margin: 0;
+  place-items: center;
+  color: white;
+}

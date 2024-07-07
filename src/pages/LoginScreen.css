@@ -1,0 +1,111 @@
+.loginScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen-logo {
+  position: fixed;
+  top: 0.5rem;
+  left: 80px;
+  width: 100px;
+  object-fit: contain;
+  z-index: 2; /* Ensure logo is above the gradient */
+}
+
+.loginScreen .loginScreen-button {
+  position: fixed;
+  top: 10px;
+  right: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  z-index: 2; /* Ensure button is above the gradient */
+}
+
+.disabled{
+  pointer-events: none;
+  cursor:not-allowed;
+ opacity: 0.6;
+}
+
+.loginScreen-Gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure gradient is behind other content */
+  background: rgba(17, 5, 5, 0.5);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen-body {
+  position: relative;
+  text-align: center;
+  z-index: 2; /* Ensure content is above the gradient */
+  color: white;
+  padding: 20px;
+}
+
+.loginScreen-body > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen-body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen-body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen-input {
+  margin-top: 20px;
+  z-index: 2; /* Ensure input field and button are above the gradient */
+}
+
+.loginScreen-input >form {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.loginScreen-input form input {
+  padding-left: 10px;
+  outline-width: 0;
+  border: 1px solid ;
+  width: 30%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.loginScreen-getStarted {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 600;
+}
