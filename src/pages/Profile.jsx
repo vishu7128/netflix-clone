@@ -8,7 +8,7 @@ import constants from "../assets/netflixCloneConstants.json";
 import { useNavigate } from "react-router-dom";
 import { PlanContext } from "../store/PlanContext";
 import { useContext } from "react";
-import useLoadingScreen from "../store/customHooks/useLoadingScreen";
+import useLoadingScreen from "../customHooks/useLoadingScreen";
 import LoadingScreen from "./LoadingScreen";
 import { useEffect } from "react";
 

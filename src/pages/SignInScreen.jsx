@@ -7,7 +7,7 @@ import {
 } from "firebase/auth";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useLoadingScreen from "../store/customHooks/useLoadingScreen";
+import useLoadingScreen from "../customHooks/useLoadingScreen";
 import LoadingScreen from "./LoadingScreen";
 
 // eslint-disable-next-line react/prop-types
